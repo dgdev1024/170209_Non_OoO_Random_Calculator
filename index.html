@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset = "utf-8">
+        <meta http-quiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <!-- Page Title -->
+        <title>Random Calculator</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous">
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+
+        <!-- Javascript -->
+        <script src = "main.js"></script>
+    </head>
+    <body>
+        <!-- Place your HTML within this container div. -->
+        <div class = "container">
+            <h1 class = "page-header text-center">
+                Random Equation Generator
+            </h1>
+            <div class = "row">
+                <div class = "col-md-6 well">
+                    <h3>Instructions</h3>
+                    <p>
+                        Click the "Generate Random Equation" button below to generate
+                        a random equation with random numbers and operations. The
+                        equation will appear in the pane to the right (or below if
+                        you are on a mobile device).
+                    </p>
+                    <h3>Important Note</h3>
+                    <p>
+                        The equations generated are calculated from left to right, and
+                        do not honor the Order of Operations.
+                    </p>
+                    <button class = "btn btn-block btn-primary" id = "btn-generate">
+                        Generate Random Equation
+                    </button>
+                </div>
+                <div class = "col-md-6 well">
+                    <h3>Random Equations Generated</h3>
+                    <div id = "equations">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+    </body>
+</html>
